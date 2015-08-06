@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
@@ -17,7 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInPasswordTextField : UITextField!
     @IBOutlet weak var forgotPasswordButton : UIButton!
     @IBOutlet weak var signInButton : UIButton!
-    @IBOutlet weak var signInFacebookView : UIView!
+    @IBOutlet weak var signInFacebookView : FBSDKLoginButton!
     @IBOutlet weak var signInFacebookIconLabel : UILabel!
     
     

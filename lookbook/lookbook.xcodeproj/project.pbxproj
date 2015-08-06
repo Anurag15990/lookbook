@@ -10,6 +10,9 @@
 		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
 		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
 		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
+		7576BF921B73278C0070A518 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE071B73274D0070A518 /* FBSDKCoreKit.framework */; };
+		7576BF931B73278C0070A518 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE081B73274D0070A518 /* FBSDKLoginKit.framework */; };
+		7576BF941B73278C0070A518 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE0A1B73274D0070A518 /* FBSDKShareKit.framework */; };
 		759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */; };
 		759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */; };
 		759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */; };
@@ -33,6 +36,13 @@
 		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		7576BC6D1B7326EE0070A518 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7576BC6E1B7326EE0070A518 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7576BC6F1B7326EE0070A518 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		7576BE071B73274D0070A518 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7576BE081B73274D0070A518 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7576BE0A1B73274D0070A518 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7576BF951B73289E0070A518 /* lookbook-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lookbook-bridging-header.h"; sourceTree = "<group>"; };
 		759E5ED41B6F5B8A006422D9 /* lookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E5ED81B6F5B8A006422D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7576BF921B73278C0070A518 /* FBSDKCoreKit.framework in Frameworks */,
+				7576BF931B73278C0070A518 /* FBSDKLoginKit.framework in Frameworks */,
+				7576BF941B73278C0070A518 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +85,23 @@
 			path = lookbookit;
 			sourceTree = "<group>";
 		};
+		7576BC731B73270D0070A518 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7576BE071B73274D0070A518 /* FBSDKCoreKit.framework */,
+				7576BE081B73274D0070A518 /* FBSDKLoginKit.framework */,
+				7576BE0A1B73274D0070A518 /* FBSDKShareKit.framework */,
+			);
+			path = FacebookSDK;
+			sourceTree = "<group>";
+		};
 		759E5ECB1B6F5B8A006422D9 = {
 			isa = PBXGroup;
 			children = (
+				7576BC731B73270D0070A518 /* FacebookSDK */,
+				7576BC6D1B7326EE0070A518 /* FBSDKCoreKit.framework */,
+				7576BC6E1B7326EE0070A518 /* FBSDKLoginKit.framework */,
+				7576BC6F1B7326EE0070A518 /* FBSDKMessengerShareKit.framework */,
 				759E5ED61B6F5B8A006422D9 /* lookbook */,
 				759E5EEE1B6F5B8A006422D9 /* lookbookTests */,
 				759E5ED51B6F5B8A006422D9 /* Products */,
@@ -103,6 +130,7 @@
 				759E5EE21B6F5B8A006422D9 /* Images.xcassets */,
 				759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */,
 				759E5ED71B6F5B8A006422D9 /* Supporting Files */,
+				7576BF951B73289E0070A518 /* lookbook-bridging-header.h */,
 			);
 			path = lookbook;
 			sourceTree = "<group>";
@@ -364,6 +392,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/anurag/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = lookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +407,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/anurag/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = lookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
