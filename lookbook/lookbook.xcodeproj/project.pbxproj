@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
+		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
+		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
 		759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */; };
 		759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */; };
 		759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		759E5ED41B6F5B8A006422D9 /* lookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E5ED81B6F5B8A006422D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7576BC681B726B2C0070A518 /* lookbookit */ = {
+			isa = PBXGroup;
+			children = (
+				7576BC691B726B7F0070A518 /* FontAwesome.swift */,
+			);
+			path = lookbookit;
+			sourceTree = "<group>";
+		};
 		759E5ECB1B6F5B8A006422D9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,10 +93,13 @@
 		759E5ED61B6F5B8A006422D9 /* lookbook */ = {
 			isa = PBXGroup;
 			children = (
+				7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */,
+				7576BC681B726B2C0070A518 /* lookbookit */,
 				759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */,
 				759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */,
 				759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */,
 				759E5EDF1B6F5B8A006422D9 /* Main.storyboard */,
+				7576BC661B72681C0070A518 /* LoginViewController.swift */,
 				759E5EE21B6F5B8A006422D9 /* Images.xcassets */,
 				759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */,
 				759E5ED71B6F5B8A006422D9 /* Supporting Files */,
@@ -198,6 +215,7 @@
 				759E5EE11B6F5B8A006422D9 /* Main.storyboard in Resources */,
 				759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */,
 				759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */,
+				7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */,
+				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
 				759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
 				759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */,
@@ -413,6 +433,7 @@
 				759E5EF71B6F5B8A006422D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		759E5EF81B6F5B8A006422D9 /* Build configuration list for PBXNativeTarget "lookbookTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +442,7 @@
 				759E5EFA1B6F5B8A006422D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
