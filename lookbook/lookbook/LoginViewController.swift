@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 import FBSDKLoginKit
+import FBSDKCoreKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var tabView : UIView!
     @IBOutlet weak var signInView : UIView!
@@ -21,15 +22,40 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInFacebookView : FBSDKLoginButton!
     @IBOutlet weak var signInFacebookIconLabel : UILabel!
     
+    var viewWillAppearExecuted = false
+    
+    override func viewWillAppear(animated: Bool) {
+        viewWillAppearExecuted = true
+        if AppContext.sharedUserDefaults.logedin {
+            var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.signInFacebookView.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if result != nil {
+            AppContext.sharedUserDefaults.logedin = true
+            if viewWillAppearExecuted {
+                var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
+                presentViewController(viewController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        AppContext.sharedUserDefaults.clearAllData()
     }
     
     

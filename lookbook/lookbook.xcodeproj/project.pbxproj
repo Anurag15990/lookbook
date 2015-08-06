@@ -13,10 +13,14 @@
 		7576BF921B73278C0070A518 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE071B73274D0070A518 /* FBSDKCoreKit.framework */; };
 		7576BF931B73278C0070A518 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE081B73274D0070A518 /* FBSDKLoginKit.framework */; };
 		7576BF941B73278C0070A518 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7576BE0A1B73274D0070A518 /* FBSDKShareKit.framework */; };
+		7576BF9D1B7338E00070A518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7576BF9B1B7338E00070A518 /* Main.storyboard */; };
+		7576BF9F1B7344BB0070A518 /* UserDefaultsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BF9E1B7344BB0070A518 /* UserDefaultsBase.swift */; };
+		7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */; };
+		7576BFA51B7347D30070A518 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA41B7347D30070A518 /* AppContext.swift */; };
+		7576BFA71B734C250070A518 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA61B734C250070A518 /* MainViewController.swift */; };
 		759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */; };
 		759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */; };
 		759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */; };
-		759E5EE11B6F5B8A006422D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EDF1B6F5B8A006422D9 /* Main.storyboard */; };
 		759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE21B6F5B8A006422D9 /* Images.xcassets */; };
 		759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */; };
 		759E5EF21B6F5B8A006422D9 /* lookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EF11B6F5B8A006422D9 /* lookbookTests.swift */; };
@@ -43,12 +47,16 @@
 		7576BE081B73274D0070A518 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7576BE0A1B73274D0070A518 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7576BF951B73289E0070A518 /* lookbook-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lookbook-bridging-header.h"; sourceTree = "<group>"; };
+		7576BF9C1B7338E00070A518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7576BF9E1B7344BB0070A518 /* UserDefaultsBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsBase.swift; sourceTree = "<group>"; };
+		7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
+		7576BFA41B7347D30070A518 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		7576BFA61B734C250070A518 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		759E5ED41B6F5B8A006422D9 /* lookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E5ED81B6F5B8A006422D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		759E5EE01B6F5B8A006422D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		759E5EE21B6F5B8A006422D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		759E5EE51B6F5B8A006422D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		759E5EEB1B6F5B8A006422D9 /* lookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				7576BC691B726B7F0070A518 /* FontAwesome.swift */,
+				7576BF9E1B7344BB0070A518 /* UserDefaultsBase.swift */,
+				7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */,
+				7576BFA41B7347D30070A518 /* AppContext.swift */,
 			);
 			path = lookbookit;
 			sourceTree = "<group>";
@@ -125,12 +136,13 @@
 				759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */,
 				759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */,
 				759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */,
-				759E5EDF1B6F5B8A006422D9 /* Main.storyboard */,
 				7576BC661B72681C0070A518 /* LoginViewController.swift */,
 				759E5EE21B6F5B8A006422D9 /* Images.xcassets */,
 				759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */,
+				7576BF9B1B7338E00070A518 /* Main.storyboard */,
 				759E5ED71B6F5B8A006422D9 /* Supporting Files */,
 				7576BF951B73289E0070A518 /* lookbook-bridging-header.h */,
+				7576BFA61B734C250070A518 /* MainViewController.swift */,
 			);
 			path = lookbook;
 			sourceTree = "<group>";
@@ -240,7 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759E5EE11B6F5B8A006422D9 /* Main.storyboard in Resources */,
+				7576BF9D1B7338E00070A518 /* Main.storyboard in Resources */,
 				759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */,
 				759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */,
 				7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */,
@@ -261,10 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7576BF9F1B7344BB0070A518 /* UserDefaultsBase.swift in Sources */,
+				7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */,
 				7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */,
 				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
 				759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
+				7576BFA71B734C250070A518 /* MainViewController.swift in Sources */,
+				7576BFA51B7347D30070A518 /* AppContext.swift in Sources */,
 				759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,10 +304,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		759E5EDF1B6F5B8A006422D9 /* Main.storyboard */ = {
+		7576BF9B1B7338E00070A518 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				759E5EE01B6F5B8A006422D9 /* Base */,
+				7576BF9C1B7338E00070A518 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
