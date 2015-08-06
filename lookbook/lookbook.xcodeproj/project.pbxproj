@@ -18,9 +18,9 @@
 		7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */; };
 		7576BFA51B7347D30070A518 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA41B7347D30070A518 /* AppContext.swift */; };
 		7576BFA71B734C250070A518 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFA61B734C250070A518 /* MainViewController.swift */; };
+		7576BFB01B7398830070A518 /* ApparelTypeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7576BFAF1B7398830070A518 /* ApparelTypeSelectionViewController.xib */; };
+		7576BFB21B7399430070A518 /* ApparelTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BFB11B7399430070A518 /* ApparelTypeSelectionViewController.swift */; };
 		759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */; };
-		759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */; };
-		759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */; };
 		759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE21B6F5B8A006422D9 /* Images.xcassets */; };
 		759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */; };
 		759E5EF21B6F5B8A006422D9 /* lookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EF11B6F5B8A006422D9 /* lookbookTests.swift */; };
@@ -52,11 +52,11 @@
 		7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
 		7576BFA41B7347D30070A518 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		7576BFA61B734C250070A518 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7576BFAF1B7398830070A518 /* ApparelTypeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApparelTypeSelectionViewController.xib; sourceTree = "<group>"; };
+		7576BFB11B7399430070A518 /* ApparelTypeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApparelTypeSelectionViewController.swift; sourceTree = "<group>"; };
 		759E5ED41B6F5B8A006422D9 /* lookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E5ED81B6F5B8A006422D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		759E5EE21B6F5B8A006422D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		759E5EE51B6F5B8A006422D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		759E5EEB1B6F5B8A006422D9 /* lookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +106,15 @@
 			path = FacebookSDK;
 			sourceTree = "<group>";
 		};
+		7576BFAE1B73983D0070A518 /* AppControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7576BFAF1B7398830070A518 /* ApparelTypeSelectionViewController.xib */,
+				7576BFB11B7399430070A518 /* ApparelTypeSelectionViewController.swift */,
+			);
+			path = AppControllers;
+			sourceTree = "<group>";
+		};
 		759E5ECB1B6F5B8A006422D9 = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +140,10 @@
 		759E5ED61B6F5B8A006422D9 /* lookbook */ = {
 			isa = PBXGroup;
 			children = (
+				7576BFAE1B73983D0070A518 /* AppControllers */,
 				7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */,
 				7576BC681B726B2C0070A518 /* lookbookit */,
 				759E5ED91B6F5B8A006422D9 /* AppDelegate.swift */,
-				759E5EDB1B6F5B8A006422D9 /* FirstViewController.swift */,
-				759E5EDD1B6F5B8A006422D9 /* SecondViewController.swift */,
 				7576BC661B72681C0070A518 /* LoginViewController.swift */,
 				759E5EE21B6F5B8A006422D9 /* Images.xcassets */,
 				759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */,
@@ -252,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7576BFB01B7398830070A518 /* ApparelTypeSelectionViewController.xib in Resources */,
 				7576BF9D1B7338E00070A518 /* Main.storyboard in Resources */,
 				759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */,
 				759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */,
@@ -277,11 +286,10 @@
 				7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */,
 				7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */,
 				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
-				759E5EDE1B6F5B8A006422D9 /* SecondViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
 				7576BFA71B734C250070A518 /* MainViewController.swift in Sources */,
 				7576BFA51B7347D30070A518 /* AppContext.swift in Sources */,
-				759E5EDC1B6F5B8A006422D9 /* FirstViewController.swift in Sources */,
+				7576BFB21B7399430070A518 /* ApparelTypeSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

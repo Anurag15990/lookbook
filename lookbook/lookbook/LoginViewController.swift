@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         viewWillAppearExecuted = true
         if AppContext.sharedUserDefaults.logedin {
             var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
-            presentViewController(viewController, animated: false, completion: nil)
+            self.navigationController?.pushViewController(viewController, animated: false)
         }
     }
     
@@ -48,9 +48,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        
         if result != nil && !result.isCancelled {
-            
             AppContext.sharedUserDefaults.logedin = true
             if (FBSDKAccessToken.currentAccessToken() != nil) {
                 var request = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "email, name"])
@@ -60,12 +58,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         AppContext.sharedUserDefaults.email = ((result1 as! NSDictionary)["email"] as! String)
                     }
                 })
-                
-                
             }
             if viewWillAppearExecuted {
                 var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
-                presentViewController(viewController, animated: false, completion: nil)
+                self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
     }
