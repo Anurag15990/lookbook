@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import FBSDKShareKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
@@ -24,16 +25,18 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     var viewWillAppearExecuted = false
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         viewWillAppearExecuted = true
         if AppContext.sharedUserDefaults.logedin {
             var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
-            presentViewController(viewController, animated: true, completion: nil)
+            presentViewController(viewController, animated: false, completion: nil)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        signInFacebookView.readPermissions = ["email", "public_profile"]
         self.signInFacebookView.delegate = self
         
         // Do any additional setup after loading the view.
@@ -45,11 +48,24 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        if result != nil {
+        
+        if result != nil && !result.isCancelled {
+            
             AppContext.sharedUserDefaults.logedin = true
+            if (FBSDKAccessToken.currentAccessToken() != nil) {
+                var request = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "email, name"])
+                request.startWithCompletionHandler({(connection, result1, error) -> Void in
+                    if result != nil {
+                        AppContext.sharedUserDefaults.userName = ((result1 as! NSDictionary)["name"] as! String)
+                        AppContext.sharedUserDefaults.email = ((result1 as! NSDictionary)["email"] as! String)
+                    }
+                })
+                
+                
+            }
             if viewWillAppearExecuted {
                 var viewController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! MainViewController
-                presentViewController(viewController, animated: true, completion: nil)
+                presentViewController(viewController, animated: false, completion: nil)
             }
         }
     }

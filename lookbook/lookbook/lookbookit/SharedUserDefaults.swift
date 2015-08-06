@@ -16,8 +16,7 @@ public class SharedUserDefaults: UserDefaultsBase {
      
         static let USER_LOGGED_IN = "UserLoggedIn"
         static let USER_NAME = "UserName"
-        static let FIRST_NAME = "FirstName"
-        static let LAST_NAME = "LastName"
+        static let EMAIL = "email"
     }
     
     public var logedin : Bool {
@@ -30,16 +29,11 @@ public class SharedUserDefaults: UserDefaultsBase {
         set { setString(newValue, forKey: Consts.USER_NAME) }
     }
     
-    public var firstName: String {
-        get { return getStringForKey(Consts.FIRST_NAME) }
-        set { setString(newValue, forKey: Consts.FIRST_NAME) }
+    public var email: String {
+        get { return getStringForKey(Consts.EMAIL) }
+        set { setString(newValue, forKey: Consts.EMAIL) }
     }
     
-    public var lastName: String {
-        get { return getStringForKey(Consts.LAST_NAME) }
-        set { setString(newValue, forKey: Consts.LAST_NAME) }
-    }
-
     public override func getNSUserDefaults() -> NSUserDefaults {
         return NSUserDefaults.standardUserDefaults()
     }
