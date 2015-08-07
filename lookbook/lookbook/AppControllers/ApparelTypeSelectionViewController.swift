@@ -10,8 +10,19 @@ import UIKit
 
 class ApparelTypeSelectionViewController: UIViewController{
     
-    @IBOutlet weak var selectionTableView : UITableView!
 
+    @IBAction func uploadShirts() {
+        
+    }
+    
+    @IBAction func uploadPants() {
+        
+    }
+    
+    @IBAction func uploadTShirts() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
