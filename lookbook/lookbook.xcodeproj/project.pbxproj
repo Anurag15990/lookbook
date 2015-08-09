@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753DC11E1B77794A00444F31 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC11D1B77794A00444F31 /* CustomView.swift */; };
+		753DC1201B7779F900444F31 /* SimpleAutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */; };
 		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
 		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
 		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		753DC11D1B77794A00444F31 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAutoLayoutView.swift; sourceTree = "<group>"; };
 		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
@@ -85,9 +89,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		753DC11C1B77793800444F31 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				753DC11D1B77794A00444F31 /* CustomView.swift */,
+				753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		7576BC681B726B2C0070A518 /* lookbookit */ = {
 			isa = PBXGroup;
 			children = (
+				753DC11C1B77793800444F31 /* CustomViews */,
 				7576BC691B726B7F0070A518 /* FontAwesome.swift */,
 				7576BF9E1B7344BB0070A518 /* UserDefaultsBase.swift */,
 				7576BFA21B7345F30070A518 /* SharedUserDefaults.swift */,
@@ -283,8 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7576BF9F1B7344BB0070A518 /* UserDefaultsBase.swift in Sources */,
+				753DC1201B7779F900444F31 /* SimpleAutoLayoutView.swift in Sources */,
 				7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */,
 				7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */,
+				753DC11E1B77794A00444F31 /* CustomView.swift in Sources */,
 				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
 				7576BFA71B734C250070A518 /* MainViewController.swift in Sources */,
