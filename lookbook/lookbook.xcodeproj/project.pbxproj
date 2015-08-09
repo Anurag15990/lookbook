@@ -11,6 +11,7 @@
 		753DC1201B7779F900444F31 /* SimpleAutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */; };
 		753DC1221B777B3100444F31 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1211B777B3100444F31 /* ContainerView.swift */; };
 		753DC1241B777B8200444F31 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1231B777B8200444F31 /* UIView.swift */; };
+		753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */; };
 		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
 		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
 		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
@@ -28,6 +29,7 @@
 		759E5EE31B6F5B8A006422D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE21B6F5B8A006422D9 /* Images.xcassets */; };
 		759E5EE61B6F5B8A006422D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759E5EE41B6F5B8A006422D9 /* LaunchScreen.xib */; };
 		759E5EF21B6F5B8A006422D9 /* lookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E5EF11B6F5B8A006422D9 /* lookbookTests.swift */; };
+		FE4A95C38DE277E23894838E /* libPods-lookbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D362F33AC63775D1F3FA3F /* libPods-lookbook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAutoLayoutView.swift; sourceTree = "<group>"; };
 		753DC1211B777B3100444F31 /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		753DC1231B777B8200444F31 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		753DC1251B777ED500444F31 /* UIImageViewObjectiveCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewObjectiveCBridge.h; sourceTree = "<group>"; };
+		753DC1261B777F8100444F31 /* lookbook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lookbook-Bridging-Header.h"; sourceTree = "<group>"; };
+		753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewObjectiveCBridge.m; sourceTree = "<group>"; };
 		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
@@ -70,6 +75,9 @@
 		759E5EEB1B6F5B8A006422D9 /* lookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E5EF01B6F5B8A006422D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759E5EF11B6F5B8A006422D9 /* lookbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookbookTests.swift; sourceTree = "<group>"; };
+		95D362F33AC63775D1F3FA3F /* libPods-lookbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lookbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		994080881ACA95488104BF13 /* Pods-lookbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lookbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lookbook/Pods-lookbook.debug.xcconfig"; sourceTree = "<group>"; };
+		D769B97AB33BBEFE045CA095 /* Pods-lookbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lookbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-lookbook/Pods-lookbook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 				7576BF921B73278C0070A518 /* FBSDKCoreKit.framework in Frameworks */,
 				7576BF931B73278C0070A518 /* FBSDKLoginKit.framework in Frameworks */,
 				7576BF941B73278C0070A518 /* FBSDKShareKit.framework in Frameworks */,
+				FE4A95C38DE277E23894838E /* libPods-lookbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083A319329D2A5386DF24DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D362F33AC63775D1F3FA3F /* libPods-lookbook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		753DC11C1B77793800444F31 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +117,9 @@
 				753DC11F1B7779F900444F31 /* SimpleAutoLayoutView.swift */,
 				753DC1211B777B3100444F31 /* ContainerView.swift */,
 				753DC1231B777B8200444F31 /* UIView.swift */,
+				753DC1251B777ED500444F31 /* UIImageViewObjectiveCBridge.h */,
+				753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */,
+				753DC1261B777F8100444F31 /* lookbook-Bridging-Header.h */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -145,6 +165,8 @@
 				759E5ED61B6F5B8A006422D9 /* lookbook */,
 				759E5EEE1B6F5B8A006422D9 /* lookbookTests */,
 				759E5ED51B6F5B8A006422D9 /* Products */,
+				7B91F0AEDE6F6095E81A76DA /* Pods */,
+				083A319329D2A5386DF24DFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +222,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7B91F0AEDE6F6095E81A76DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				994080881ACA95488104BF13 /* Pods-lookbook.debug.xcconfig */,
+				D769B97AB33BBEFE045CA095 /* Pods-lookbook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 759E5EF51B6F5B8A006422D9 /* Build configuration list for PBXNativeTarget "lookbook" */;
 			buildPhases = (
+				90F64328E472468610266962 /* Check Pods Manifest.lock */,
 				759E5ED01B6F5B8A006422D9 /* Sources */,
 				759E5ED11B6F5B8A006422D9 /* Frameworks */,
 				759E5ED21B6F5B8A006422D9 /* Resources */,
+				ED636FBC34FB202A4462962D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,6 +330,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		90F64328E472468610266962 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED636FBC34FB202A4462962D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lookbook/Pods-lookbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		759E5ED01B6F5B8A006422D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +377,7 @@
 				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
 				7576BFA71B734C250070A518 /* MainViewController.swift in Sources */,
+				753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */,
 				7576BFA51B7347D30070A518 /* AppContext.swift in Sources */,
 				753DC1221B777B3100444F31 /* ContainerView.swift in Sources */,
 				7576BFB21B7399430070A518 /* ApparelTypeSelectionViewController.swift in Sources */,
@@ -438,8 +505,10 @@
 		};
 		759E5EF61B6F5B8A006422D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994080881ACA95488104BF13 /* Pods-lookbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/anurag/Documents/FacebookSDK,
@@ -448,13 +517,17 @@
 				INFOPLIST_FILE = lookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lookbook/lookbookit/CustomViews/lookbook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		759E5EF71B6F5B8A006422D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D769B97AB33BBEFE045CA095 /* Pods-lookbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/anurag/Documents/FacebookSDK,
@@ -463,6 +536,7 @@
 				INFOPLIST_FILE = lookbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lookbook/lookbookit/CustomViews/lookbook-Bridging-Header.h";
 			};
 			name = Release;
 		};
