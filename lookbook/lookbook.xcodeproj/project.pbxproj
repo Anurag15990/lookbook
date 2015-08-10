@@ -12,6 +12,8 @@
 		753DC1221B777B3100444F31 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1211B777B3100444F31 /* ContainerView.swift */; };
 		753DC1241B777B8200444F31 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1231B777B8200444F31 /* UIView.swift */; };
 		753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */; };
+		753DC12A1B77862C00444F31 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1291B77862C00444F31 /* AsyncImageView.swift */; };
+		753DC12C1B77866000444F31 /* LayoutConstraintsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */; };
 		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
 		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
 		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
@@ -50,6 +52,8 @@
 		753DC1251B777ED500444F31 /* UIImageViewObjectiveCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewObjectiveCBridge.h; sourceTree = "<group>"; };
 		753DC1261B777F8100444F31 /* lookbook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lookbook-Bridging-Header.h"; sourceTree = "<group>"; };
 		753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewObjectiveCBridge.m; sourceTree = "<group>"; };
+		753DC1291B77862C00444F31 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintsFactory.swift; sourceTree = "<group>"; };
 		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				753DC1251B777ED500444F31 /* UIImageViewObjectiveCBridge.h */,
 				753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */,
 				753DC1261B777F8100444F31 /* lookbook-Bridging-Header.h */,
+				753DC1291B77862C00444F31 /* AsyncImageView.swift */,
+				753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -377,10 +383,12 @@
 				7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */,
 				759E5EDA1B6F5B8A006422D9 /* AppDelegate.swift in Sources */,
 				7576BFA71B734C250070A518 /* MainViewController.swift in Sources */,
+				753DC12C1B77866000444F31 /* LayoutConstraintsFactory.swift in Sources */,
 				753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */,
 				7576BFA51B7347D30070A518 /* AppContext.swift in Sources */,
 				753DC1221B777B3100444F31 /* ContainerView.swift in Sources */,
 				7576BFB21B7399430070A518 /* ApparelTypeSelectionViewController.swift in Sources */,
+				753DC12A1B77862C00444F31 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
