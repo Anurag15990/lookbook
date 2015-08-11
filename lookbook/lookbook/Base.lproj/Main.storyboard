@@ -25,7 +25,7 @@
         <!--Suggestions-->
         <scene sceneID="yud-WR-oLG">
             <objects>
-                <viewController id="gNe-Z0-VUE" sceneMemberID="viewController">
+                <viewController id="gNe-Z0-VUE" customClass="SuggestionsViewController" customModule="lookbook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jlQ-aZ-phg"/>
                         <viewControllerLayoutGuide type="bottom" id="Ay9-RW-ngq"/>

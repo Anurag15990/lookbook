@@ -14,6 +14,8 @@
 		753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */; };
 		753DC12A1B77862C00444F31 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC1291B77862C00444F31 /* AsyncImageView.swift */; };
 		753DC12C1B77866000444F31 /* LayoutConstraintsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */; };
+		754F87BC1B7901E000D3D76D /* PhotoSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F87BB1B7901E000D3D76D /* PhotoSelectionViewController.swift */; };
+		754F87BE1B79E30B00D3D76D /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F87BD1B79E30B00D3D76D /* SuggestionsViewController.swift */; };
 		7576BC671B72681C0070A518 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC661B72681C0070A518 /* LoginViewController.swift */; };
 		7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576BC691B726B7F0070A518 /* FontAwesome.swift */; };
 		7576BC6C1B726C4A0070A518 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */; };
@@ -54,6 +56,8 @@
 		753DC1271B777F8100444F31 /* UIImageViewObjectiveCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewObjectiveCBridge.m; sourceTree = "<group>"; };
 		753DC1291B77862C00444F31 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintsFactory.swift; sourceTree = "<group>"; };
+		754F87BB1B7901E000D3D76D /* PhotoSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectionViewController.swift; sourceTree = "<group>"; };
+		754F87BD1B79E30B00D3D76D /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		7576BC661B72681C0070A518 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7576BC691B726B7F0070A518 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
 		7576BC6B1B726C4A0070A518 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				753DC1261B777F8100444F31 /* lookbook-Bridging-Header.h */,
 				753DC1291B77862C00444F31 /* AsyncImageView.swift */,
 				753DC12B1B77866000444F31 /* LayoutConstraintsFactory.swift */,
+				754F87BB1B7901E000D3D76D /* PhotoSelectionViewController.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				7576BFAF1B7398830070A518 /* ApparelTypeSelectionViewController.xib */,
 				7576BFB11B7399430070A518 /* ApparelTypeSelectionViewController.swift */,
+				754F87BD1B79E30B00D3D76D /* SuggestionsViewController.swift */,
 			);
 			path = AppControllers;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 			files = (
 				7576BF9F1B7344BB0070A518 /* UserDefaultsBase.swift in Sources */,
 				753DC1201B7779F900444F31 /* SimpleAutoLayoutView.swift in Sources */,
+				754F87BE1B79E30B00D3D76D /* SuggestionsViewController.swift in Sources */,
 				7576BFA31B7345F30070A518 /* SharedUserDefaults.swift in Sources */,
 				7576BC6A1B726B7F0070A518 /* FontAwesome.swift in Sources */,
 				753DC1241B777B8200444F31 /* UIView.swift in Sources */,
@@ -386,6 +393,7 @@
 				753DC12C1B77866000444F31 /* LayoutConstraintsFactory.swift in Sources */,
 				753DC1281B777F8100444F31 /* UIImageViewObjectiveCBridge.m in Sources */,
 				7576BFA51B7347D30070A518 /* AppContext.swift in Sources */,
+				754F87BC1B7901E000D3D76D /* PhotoSelectionViewController.swift in Sources */,
 				753DC1221B777B3100444F31 /* ContainerView.swift in Sources */,
 				7576BFB21B7399430070A518 /* ApparelTypeSelectionViewController.swift in Sources */,
 				753DC12A1B77862C00444F31 /* AsyncImageView.swift in Sources */,

@@ -1,36 +1,17 @@
 //
-//  ApparelTypeSelectionViewController.swift
+//  SuggestionsViewController.swift
 //  lookbook
 //
-//  Created by Anurag Agnihotri on 06/08/15.
+//  Created by Anurag Agnihotri on 11/08/15.
 //  Copyright (c) 2015 lookbook. All rights reserved.
 //
 
 import UIKit
 
-class ApparelTypeSelectionViewController: UIViewController{
-    
-
-    @IBAction func uploadShirts() {
-        selectPhoto()
-    }
-    
-    @IBAction func uploadPants() {
-        selectPhoto()
-    }
-    
-    @IBAction func uploadTShirts() {
-        selectPhoto()
-    }
-    
-    func selectPhoto() {
-        var viewController = PhotoSelectionViewController()
-        presentViewController(viewController, animated: true, completion: nil)
-    }
+class SuggestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -39,7 +20,7 @@ class ApparelTypeSelectionViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-
+   
     /*
     // MARK: - Navigation
 

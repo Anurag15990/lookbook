@@ -12,7 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initializeNavigationBar()
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +20,18 @@ class MainViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func initializeNavigationBar() {
+        self.title = "Suggestions"
+        var rightBarButton = UIBarButtonItem(title: "Add Photo", style: UIBarButtonItemStyle.Plain, target: self, action: "uploadImage")
+        navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    func uploadImage() {
+        var viewController = ApparelTypeSelectionViewController(nibName: "ApparelTypeSelectionViewController", bundle: nil)
+        presentViewController(viewController, animated: true, completion: nil)
+    }
+
     
 
     /*
