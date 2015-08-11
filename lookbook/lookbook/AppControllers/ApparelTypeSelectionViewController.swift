@@ -10,6 +10,8 @@ import UIKit
 
 class ApparelTypeSelectionViewController: UIViewController{
     
+    var showPhotoSignal : ((signal : Bool) -> Void)?
+    var senderViewController : UIViewController!
 
     @IBAction func uploadShirts() {
         selectPhoto()
@@ -24,14 +26,18 @@ class ApparelTypeSelectionViewController: UIViewController{
     }
     
     func selectPhoto() {
-        var viewController = PhotoSelectionViewController()
-        presentViewController(viewController, animated: true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
+        showPhotoSignal?(signal: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.addSingleTapGestureRecognizer(target: self, action: "dismissView")
         // Do any additional setup after loading the view.
+    }
+    
+    func dismissView() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

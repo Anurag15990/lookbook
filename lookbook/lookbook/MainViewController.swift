@@ -29,6 +29,14 @@ class MainViewController: UITabBarController {
     
     func uploadImage() {
         var viewController = ApparelTypeSelectionViewController(nibName: "ApparelTypeSelectionViewController", bundle: nil)
+        viewController.senderViewController = self
+        viewController.showPhotoSignal = showPhotoView
+        viewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        presentViewController(viewController, animated: true, completion: nil)
+    }
+    
+    func showPhotoView(signal : Bool) {
+        var viewController = PhotoSelectionViewController()
         presentViewController(viewController, animated: true, completion: nil)
     }
 

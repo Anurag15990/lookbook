@@ -20,7 +20,7 @@ class PhotoSelectionViewController : UIImagePickerController, UIImagePickerContr
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     

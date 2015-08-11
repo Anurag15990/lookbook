@@ -14,53 +14,103 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Shirts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-ZQ-fV5">
-                    <rect key="frame" x="8" y="260" width="114" height="21"/>
-                    <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload T-Shirts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD9-aR-wMz">
-                    <rect key="frame" x="192" y="260" width="120" height="24"/>
-                    <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Pants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ki-n5-F9a">
-                    <rect key="frame" x="95" y="420" width="131" height="24"/>
-                    <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R77-XM-xId">
-                    <rect key="frame" x="21" y="155" width="88" height="88"/>
-                    <state key="normal" image="shirts-image">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="uploadShirts" destination="-1" eventType="touchUpInside" id="VpB-VB-Q35"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-0F-Clt">
-                    <rect key="frame" x="216" y="163" width="72" height="72"/>
-                    <state key="normal" image="t-shirts-image">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="uploadTShirts" destination="-1" eventType="touchUpInside" id="VGs-uX-uWL"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-Ne-yCF">
-                    <rect key="frame" x="119" y="342" width="82" height="70"/>
-                    <state key="normal" image="pants">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="uploadPants" destination="-1" eventType="touchUpInside" id="q6M-GO-KAG"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F87-bB-Sw0">
+                    <rect key="frame" x="0.0" y="398" width="320" height="170"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-0F-Clt">
+                            <rect key="frame" x="130" y="27" width="60" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="hmM-vu-Klt"/>
+                                <constraint firstAttribute="height" constant="55" id="zLQ-8I-uaR"/>
+                            </constraints>
+                            <state key="normal" image="t-shirts-image">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="uploadTShirts" destination="-1" eventType="touchUpInside" id="VGs-uX-uWL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R77-XM-xId">
+                            <rect key="frame" x="8" y="17" width="75" height="73"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="Xis-Ao-uD8"/>
+                                <constraint firstAttribute="height" constant="73" id="auO-J7-F2Z"/>
+                            </constraints>
+                            <state key="normal" image="shirts-image">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="uploadShirts" destination="-1" eventType="touchUpInside" id="VpB-VB-Q35"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Shirts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-ZQ-fV5">
+                            <rect key="frame" x="8" y="102" width="93" height="23.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.5" id="5UX-a7-pxe"/>
+                                <constraint firstAttribute="width" constant="93" id="i2O-O2-vuZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Pants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ki-n5-F9a">
+                            <rect key="frame" x="109" y="101" width="102" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="LB2-t1-Zts"/>
+                                <constraint firstAttribute="width" constant="102" id="Ufy-KK-IZq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload T-Shirts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD9-aR-wMz">
+                            <rect key="frame" x="219" y="101" width="93" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ORc-87-326"/>
+                                <constraint firstAttribute="width" constant="93" id="YBd-xz-eBq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-Ne-yCF">
+                            <rect key="frame" x="240" y="27" width="72" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="6GN-qy-oi0"/>
+                                <constraint firstAttribute="width" constant="72" id="tkW-fY-V4X"/>
+                            </constraints>
+                            <state key="normal" image="pants">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="uploadPants" destination="-1" eventType="touchUpInside" id="q6M-GO-KAG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.34000000000000002" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Mv0-0F-Clt" firstAttribute="top" secondItem="F87-bB-Sw0" secondAttribute="top" constant="27" id="8YV-Ng-g3Q"/>
+                        <constraint firstItem="R77-XM-xId" firstAttribute="top" secondItem="F87-bB-Sw0" secondAttribute="top" constant="17" id="BBm-nn-UPn"/>
+                        <constraint firstItem="0BX-ZQ-fV5" firstAttribute="leading" secondItem="F87-bB-Sw0" secondAttribute="leading" constant="8" id="ECd-yQ-BgR"/>
+                        <constraint firstAttribute="centerX" secondItem="8ki-n5-F9a" secondAttribute="centerX" id="JH4-cs-Dtg"/>
+                        <constraint firstAttribute="trailing" secondItem="mMk-Ne-yCF" secondAttribute="trailing" constant="8" id="Mu4-UP-rbz"/>
+                        <constraint firstItem="OD9-aR-wMz" firstAttribute="top" secondItem="mMk-Ne-yCF" secondAttribute="bottom" constant="21" id="QNB-ab-Qat"/>
+                        <constraint firstAttribute="trailing" secondItem="OD9-aR-wMz" secondAttribute="trailing" constant="8" id="QVt-hS-qdV"/>
+                        <constraint firstItem="0BX-ZQ-fV5" firstAttribute="top" secondItem="R77-XM-xId" secondAttribute="bottom" constant="12" id="QZK-de-pae"/>
+                        <constraint firstItem="mMk-Ne-yCF" firstAttribute="top" secondItem="F87-bB-Sw0" secondAttribute="top" constant="27" id="dnR-VE-0ch"/>
+                        <constraint firstItem="8ki-n5-F9a" firstAttribute="top" secondItem="Mv0-0F-Clt" secondAttribute="bottom" constant="19" id="lx9-HL-h1B"/>
+                        <constraint firstAttribute="centerX" secondItem="Mv0-0F-Clt" secondAttribute="centerX" id="o6X-Ci-iaZ"/>
+                        <constraint firstAttribute="height" constant="170" id="o7M-Rd-dJN"/>
+                        <constraint firstItem="R77-XM-xId" firstAttribute="leading" secondItem="F87-bB-Sw0" secondAttribute="leading" constant="8" id="qI5-1R-Wyd"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="F87-bB-Sw0" secondAttribute="bottom" id="FK6-A9-DZl"/>
+                <constraint firstItem="F87-bB-Sw0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SGo-ec-hUC"/>
+                <constraint firstAttribute="trailing" secondItem="F87-bB-Sw0" secondAttribute="trailing" id="pct-1m-q07"/>
+            </constraints>
             <point key="canvasLocation" x="340" y="447"/>
         </view>
     </objects>
