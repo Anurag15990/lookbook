@@ -12,12 +12,26 @@ class SuggestionsViewController: UIViewController {
     
     @IBOutlet weak var imageView1 : AsyncImageView!
     @IBOutlet weak var imageView2 : AsyncImageView!
+    @IBOutlet weak var containerView : ContainerView!
     
+    
+   
+    var shirtsList = ["http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681031412004618240",
+                      "http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681033997586595840",
+                      "http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681030999686643712"]
+    var tShirtsList = [String]()
+    var pantsList = ["http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681034504395948032",
+                    "http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681034478626078720",
+                    "http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681034452856209408"]
+    
+    
+    var shirtsCounter : Int = 0
+    var pantsCounter : Int = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView1.setImageWithUrl("http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681033997586595840", options: AsyncImageOptions.ShowAlways)
-        imageView2.setImageWithUrl("http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681034701965164544", options: AsyncImageOptions.ShowAlways)
+        updateImageViews(shirtsCounter, y: pantsCounter)
         
         initializeView()
         // Do any additional setup after loading the view.
@@ -34,7 +48,20 @@ class SuggestionsViewController: UIViewController {
         
         imageView2.borderColor = UIColor.lightGrayColor().CGColor
         imageView2.borderWidth = 0.5
+        
     }
+    
+    @IBAction func dislikeButtonClicked() {
+        shirtsCounter = Int(arc4random_uniform(UInt32(shirtsList.count - 1)))
+        pantsCounter = Int(arc4random_uniform(UInt32(pantsList.count - 1)))
+        updateImageViews(shirtsCounter, y: pantsCounter)
+    }
+    
+    private func updateImageViews(x : Int! , y : Int!) {
+        imageView1.setImageWithUrl(shirtsList[x] as String, options: AsyncImageOptions.ShowAlways)
+        imageView2.setImageWithUrl(pantsList[y], options: AsyncImageOptions.ShowAlways)
+    }
+    
     
    
     /*
