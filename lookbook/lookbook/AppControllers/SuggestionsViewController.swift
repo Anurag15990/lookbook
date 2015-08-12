@@ -10,14 +10,30 @@ import UIKit
 
 class SuggestionsViewController: UIViewController {
     
+    @IBOutlet weak var imageView1 : AsyncImageView!
+    @IBOutlet weak var imageView2 : AsyncImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView1.setImageWithUrl("http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681033997586595840", options: AsyncImageOptions.ShowAlways)
+        imageView2.setImageWithUrl("http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681034701965164544", options: AsyncImageOptions.ShowAlways)
+        
+        initializeView()
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initializeView() {
+        imageView1.borderColor = UIColor.lightGrayColor().CGColor
+        imageView1.borderWidth = 0.5
+        
+        imageView2.borderColor = UIColor.lightGrayColor().CGColor
+        imageView2.borderWidth = 0.5
     }
     
    

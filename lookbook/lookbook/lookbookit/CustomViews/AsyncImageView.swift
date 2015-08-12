@@ -95,7 +95,7 @@ public class AsyncImageView : SimpleAutoLayoutView {
     }
     
     public override func initalizeView() {
-        imageView.contentMode = UIViewContentMode.ScaleToFill
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
         addSubview(imageView)
         
         activityView.activityIndicatorViewStyle = .Gray

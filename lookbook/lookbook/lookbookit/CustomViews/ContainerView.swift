@@ -19,4 +19,9 @@ class ContainerView : SimpleAutoLayoutView {
         layer.shadowOpacity = 1.0
         layer.shadowRadius = 2.0
     }
+    
+    
+    override func addConstraints() {
+    
+    }
 }
