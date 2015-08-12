@@ -14,6 +14,10 @@ class SuggestionsViewController: UIViewController {
     @IBOutlet weak var imageView2 : AsyncImageView!
     @IBOutlet weak var containerView : ContainerView!
     
+    @IBOutlet weak var dislikeButton : UIButton!
+    @IBOutlet weak var bookmarkButton : UIButton!
+    
+    
     
    
     var shirtsList = ["http://isaia-test.toovia.com:9195/media/thumbnail/int/sm/0/681010426770751498/681031412004618240",
@@ -48,6 +52,12 @@ class SuggestionsViewController: UIViewController {
         
         imageView2.borderColor = UIColor.lightGrayColor().CGColor
         imageView2.borderWidth = 0.5
+        
+        bookmarkButton.setTitle(String.fontAwesomeIconWithName("fa-bookmark"), forState: UIControlState.Normal)
+        bookmarkButton.titleLabel?.font = UIFont.fontAwesomeOfSize(40)
+        
+        dislikeButton.setTitle(String.fontAwesomeIconWithName("fa-thumbs-down"), forState: UIControlState.Normal)
+        dislikeButton.titleLabel?.font = UIFont.fontAwesomeOfSize(40)
         
     }
     
